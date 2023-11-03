@@ -3,73 +3,76 @@ header{
     display: flex;
     flex-direction: column;
 }
-.box1{
-    background-color:  #B50014;
-    max-height: 93px;
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: space-between; */
-}
-
 .logo-menu{
-    position: relative;
-    text-align: center;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    max-height: 177.2px;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
 }
-
+.logo img{
+    max-height: 177.2px;
+}
 nav{
-    list-style: none;
-    /* padding: 35px 0 30px 0; */
-    position: relative;
-    
+    display: flex;
 }
-
 nav ul{
-    list-style: none;
+    display: flex;
     flex-wrap: wrap;
-    
+    flex-direction: row;
+    padding-top: 50px;
+    padding-left: 15px;
+    gap: 20px;
 }
-
 nav ul li{
-    display: inline-block;
-    padding: 40px 20px 65px 20px;
-
+    list-style: none;
+    
 }
 nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 16px;
-    font-weight: 18.75px;
+    line-height: 1.1;
     
 }
-nav ul li:last-child::before{
-    content: url('../images/download.png');
-    display: inline-block;
+.box1{
+    background-color:  #B50014;
+    max-height: 93px;
+    position: relative;
 }
 .box2{
-    /* flex: 1; */
     background-color: #252525;
     min-height: 30px;
     width: 100%; 
-}
-.logo{
-    max-height: 177.2px;    
-    position: absolute;
-    z-index: 6;
-    left: 0;
-}
-.logo-img {
-    max-height: 177.2px; 
-    width: 100%;
+    /* position: relative; */
 }
 .time-box{
     color: #fff;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16,41;
+    line-height: 1.1;
     display: flex;
     justify-content: flex-end;
-    padding: 0 298px 0 0;
+    padding: 0;
+    padding-top: 300px;
+}
+
+.icon{
+    display: none;
+}
+@media only screen and (max-width:1090px){
+    nav ul{
+        display: none;
+    }
+    .logo-menu{
+        justify-content: space-between;
+        padding: 0;
+        padding-top: 20px;
+    }
+    .icon{
+        display:block;
+        height: 300px;
+    }
+    
 }
