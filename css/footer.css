@@ -1,0 +1,28 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.upper-part{
+    background-color: #B50014;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.small-icons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.bottom-part{
+    background-color: #66000B;
+}
+ul li{
+    list-style: none;
+}
+span.s1::before{
+    content: "";
+    display: inline-block;
+    background: url("../images/pin.png");
+    background-repeat: no-repeat;
+}
